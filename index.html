@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <style>
+        body{
+            background-color: #b3b3ff;
+        }
+        .main-img{
+            height: 400px;
+            width: 100%;
+ 
+        }
+        .card{
+            height: 400px;
+            width: 30%;
+            margin: 20px auto;
+            border: 3px solid #b3b3ff;
+            border-radius: 4px;
+        }
+        .img-container{
+            display: flex;
+            justify-content: center;
+
+
+        }
+        .img{
+            height: 70px;
+            width: 70px;
+            margin: 10px;
+ 
+        }
+        .img:hover{
+            border: 2px solid #3333ff;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img class="main-img" src="one.jpg" id="poster">
+        <div class="img-container" >
+        <img class="img" src="./one.jpg" onclick="changeimg('one.jpg')">
+        <img class="img" src="./two.jpg" onclick="changeimg('two.jpg')">
+        <img class="img" src="./three.jpg" onclick="changeimg('three.jpg')">
+        <img class="img" src="./four.jpg" onclick="changeimg('four.jpg')">
+        <img class="img" src="./five.jpg" onclick="changeimg('five.jpg')">
+        </div>
+    </div>
+    <script>
+        function changeimg(image)
+        {
+            const img =document.getElementById('poster')
+            img.src=image;
+        }
+    </script>
+</body>
+</html>
